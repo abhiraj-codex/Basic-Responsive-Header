@@ -29,6 +29,13 @@ a {
   color: var(--text-color);
   font-size: 2.5rem;
   font-weight: 500;
+  
+}
+
+header{
+  background-color: var(--background-color);
+   border-bottom: solid var(--primary-color) 0.1rem;
+  
 }
 
 .main-header {
@@ -38,7 +45,7 @@ a {
   margin: auto;
   background-color: var(--background-color);
   height: 60px;
-  border-bottom: solid var(--primary-color) 0.1rem;
+  /* border-bottom: solid var(--primary-color) 0.1rem; */
   position: relative;
 }
 
@@ -118,9 +125,26 @@ a {
   border-radius: 20px;
 }
 
+.nav-item-list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-item-list .download-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
   color: var(--text-color);
+}
+
+.nav-item ul li i.bx{
+  margin-right: .5rem;
+}
+
+.nav-item-list .download-btn i.bx{
+  margin-left: .5rem;
 }
 
 .nooo-active {
@@ -129,22 +153,61 @@ a {
 
 
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) {
+
+  html{
+    font-size: 72.5%;
+  }
     .nav-button{
         display: none;
     }
 
     .nav-item{
         position: static;
-        width: inherit;
-        height: inherit;
+        width: unset;
+        height: unset;
          display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: 2rem;
+      
     }
+
+    .nav-item ul li a{
+      font-size: 1.5rem;
+    }
+
+     .nav-item ul .download-btn a{
+      font-size: 1.5rem;
+      /* padding: 5px; */
+
+     }
+
+       .nav-item ul .download-btn{
+          padding: 5px;
+       }
 
     .nav-item-list{
        
        display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 20px;
     }
+
+   .nav-item ul li{
+    margin: unset;
+   }
+}
+
+
+@media (min-width: 1020px) {
+  html{
+    font-size: 82.5%;
+  }
+}
+
+
+.main-header{
+  max-width: 1440px;
 }
