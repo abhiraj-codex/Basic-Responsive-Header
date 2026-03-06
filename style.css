@@ -107,6 +107,7 @@ header{
   top: 0;
   left: -100%;
   transition: left .3s ease;
+  z-index: 100;
 }
 
 .nav-item ul {
@@ -206,14 +207,14 @@ header{
 
 /* typed js setup */
 
-.dis{
+.typed-js{
   margin: 0 auto;
   text-align: center;
   position: relative;
   top: 20vh;
 }
 
-.dis p{
+.typed-js p{
   font-family: 'Poppins';
   font-size: 2rem;
   text-transform: capitalize;

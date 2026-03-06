@@ -22,6 +22,7 @@ Introducing our first basic responsive header built with HTML, CSS, and a touch 
 - HTML5
 - CSS3
 - JavaScript 
+- Typed.js
 
 ## Contributing
 Contributions are welcome! Feel free to fork the repo and create a pull request.
