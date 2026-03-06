@@ -53,6 +53,11 @@ header{
   display: flex;
   padding-left: 2rem;
   align-items: center;
+  transition: all .3s ease;
+}
+
+.logo:hover{
+  scale: 0.9;
 }
 
 .logo-container {
@@ -125,10 +130,35 @@ header{
   border-radius: 20px;
 }
 
+
+
 .nav-item-list li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  /* width: max-content; */
+  text-align: center;
+}
+
+.nav-item-list li a:not(.download-btn a):hover::before {
+  content: "";
+  border-bottom: .2rem solid var(--text-color);
+  /* height: .1rem; */
+  width: 100%;
+  bottom: -20%;
+  position: absolute;
+ 
+  animation: hovereffect .5s  ;
+}
+
+@keyframes hovereffect {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
 }
 
 .nav-item-list .download-btn a {
@@ -137,6 +167,8 @@ header{
   align-items: center;
   font-size: 2rem;
   color: var(--text-color);
+   transition: all .5s ease;
+  padding-left: .3rem;
 }
 
 .nav-item ul li i.bx{
@@ -149,6 +181,43 @@ header{
 
 .nooo-active {
   left: 0;
+}
+
+.nav-item-list li a{
+  width: fit-content;
+}
+
+.nav-item-list li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+.nav-item-list .download-btn{
+  transition: all .5s ease;
+}
+.nav-item-list .download-btn:hover{
+  background-color: var(--text-color);
+  border: none;
+  & a{
+    color: var(--primary-color);
+  }
+}
+
+/* typed js setup */
+
+.dis{
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 20vh;
+}
+
+.dis p{
+  font-family: 'Poppins';
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 500;
 }
 
 
